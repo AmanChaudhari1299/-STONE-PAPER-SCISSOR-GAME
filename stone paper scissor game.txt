@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main()
+{
+    int n,m;
+    printf("HELLO USER'S\n");
+    printf("CHOOSE YOUR APPROACH\n");
+    printf("1.stone\n");
+    printf("2.paper\n");
+    printf("3.scissor\n");
+    printf("select your first approach:\n");
+    scanf("%d",&n);
+    printf("select your second approach:\n");
+    scanf("%d",&m);
+    if((n==1 && m==2)||(n==2&&m==1))
+    {
+        int a=2;
+        switch(a)
+        {
+            case 2:
+            printf("Winner is #paper:");
+            break;
+            default:
+            printf("Entered value invalid:");
+        }
+    }
+     else if((n==2 && m==3)||(n==3 && m==2))
+    {
+        int b=3;
+        switch(b)
+        {
+            case 3:
+            printf("Winner is #scissor:");
+            break;
+            default:
+            printf("Entered value invalid:");
+        }
+    }
+     else if((n==1 && m==3)||(n==3 && m==1))
+    { 
+        int c=1;
+        switch(c)
+        {
+            case 1:
+            printf("Winner is #stone:");
+            break;
+            default:
+            printf("Entered value invalid:");
+        }
+    }
+    else 
+    {
+        printf("condition draw");
+    }
+    
+    return 0;
+}
